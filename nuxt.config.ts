@@ -4,6 +4,10 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 export default defineNuxtConfig({
   telemetry: false,
   devtools: { enabled: true },
+  typescript: {
+    shim: false,
+  },
+  srcDir: 'src/',
   modules: [
     '@pinia/nuxt',
     (_options, nuxt) => {
