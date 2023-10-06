@@ -1,4 +1,7 @@
 {
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit"
+  },
   "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
   "editor.formatOnSave": true,
   "files.eol": "\n",

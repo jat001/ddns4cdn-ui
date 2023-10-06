@@ -37,7 +37,8 @@
     "not dead"
   ],
   "prettier": {
-    "semi": false
+    "semi": false,
+    "singleQuote": true
   },
   "eslintConfig": {
     "root": true,
