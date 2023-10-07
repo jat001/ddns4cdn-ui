@@ -1,5 +1,4 @@
 import { defineNuxtConfig } from 'nuxt/config'
-import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
   telemetry: false,
@@ -14,22 +13,5 @@ export default defineNuxtConfig({
     typeCheck: true,
   },
   srcDir: 'src/',
-  modules: [
-    (_, nuxt) => {
-      nuxt.hooks.hook('vite:extendConfig', (config) => {
-        const { plugins } = config
-        if (plugins === undefined) return
-        plugins.push(vuetify({ autoImport: true }))
-      })
-    },
-    '@pinia/nuxt',
-    '@nuxtjs/eslint-module',
-  ],
-  vite: {
-    vue: {
-      template: {
-        transformAssetUrls,
-      },
-    },
-  },
+  modules: ['vuetify-nuxt-module', '@pinia/nuxt', '@nuxtjs/eslint-module'],
 })
