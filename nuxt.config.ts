@@ -3,19 +3,27 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 export default defineNuxtConfig({
   telemetry: false,
-  devtools: { enabled: true },
+  devtools: {
+    enabled: true,
+    timeline: {
+      enabled: true,
+    },
+  },
   typescript: {
     shim: false,
+    typeCheck: true,
   },
   srcDir: 'src/',
   modules: [
-    '@pinia/nuxt',
-    (_options, nuxt) => {
+    (_, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {
-        // @ts-expect-error
-        config.plugins.push(vuetify({ autoImport: true }))
+        const { plugins } = config
+        if (plugins === undefined) return
+        plugins.push(vuetify({ autoImport: true }))
       })
     },
+    '@pinia/nuxt',
+    '@nuxtjs/eslint-module',
   ],
   vite: {
     vue: {
