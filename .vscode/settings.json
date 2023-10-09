@@ -2,9 +2,11 @@
   "editor.codeActionsOnSave": {
     "source.organizeImports": "explicit"
   },
-  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
   "files.eol": "\n",
   "files.insertFinalNewline": true,
-  "files.trimTrailingWhitespace": true
+  "files.trimTrailingWhitespace": true,
+  "stylelint.snippet": ["css", "postcss", "scss"],
+  "stylelint.validate": ["css", "html", "postcss", "scss", "vue"]
 }

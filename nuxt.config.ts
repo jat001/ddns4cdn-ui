@@ -13,5 +13,10 @@ export default defineNuxtConfig({
     typeCheck: true,
   },
   srcDir: 'src/',
-  modules: ['vuetify-nuxt-module', '@pinia/nuxt', '@nuxtjs/eslint-module'],
+  modules: [
+    '@pinia/nuxt',
+    'vuetify-nuxt-module',
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/stylelint-module',
+  ],
 })
