@@ -1,0 +1,36 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "dev",
+      "type": "node",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "program": "node_modules/nuxi/bin/nuxi.mjs",
+      "args": ["dev"],
+      "outputCapture": "std"
+    },
+    {
+      "name": "chrome",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+      "runtimeExecutable": "C:\\Users\\Jat\\scoop\\apps\\googlechrome-dev\\current\\chrome.exe",
+      "userDataDir": false
+    },
+    {
+      "name": "edge",
+      "type": "msedge",
+      "request": "launch",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "debug",
+      "configurations": ["dev", "chrome"]
+    }
+  ]
+}

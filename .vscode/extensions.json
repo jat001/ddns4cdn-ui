@@ -2,7 +2,10 @@
   "recommendations": [
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
+    "graphql.vscode-graphql",
     "nuxtr.nuxtr-vscode",
+    "pucelle.vscode-css-navigation",
+    "rohit-gohri.format-code-action",
     "stylelint.vscode-stylelint",
     "vue.volar",
     "vue.vscode-typescript-vue-plugin"

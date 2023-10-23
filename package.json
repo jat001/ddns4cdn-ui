@@ -9,20 +9,20 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@apollo/client": "^3.8.6",
     "@mdi/font": "7.3.67",
     "@nuxt/devtools": "^1.0.0",
-    "@nuxtjs/apollo": "^5.0.0-alpha.7",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/stylelint-module": "^5.1.0",
     "@pinia/nuxt": "^0.5.1",
     "@vitejs/plugin-vue": "^4.4.0",
-    "@vue/apollo-composable": "^4.0.0-beta.11",
     "@vue/eslint-config-typescript": "^12.0.0",
-    "eslint": "^8.51.0",
+    "eslint": "^8.52.0",
     "eslint-plugin-vue": "^9.17.0",
     "graphql": "^16.8.1",
+    "graphql-config": "^5.0.3",
+    "graphql-request": "^6.1.0",
     "nuxt": "^3.8.0",
+    "nuxt-graphql-client": "^0.2.30",
     "pinia": "^2.1.7",
     "prettier": "^3.0.3",
     "sass": "^1.69.4",
@@ -43,6 +43,14 @@
     "last 2 versions",
     "not dead"
   ],
+  "graphql": {
+    "projects": {
+      "default": {
+        "schema": "http://localhost:8080/graphql",
+        "documents": "src/queries/*.gql"
+      }
+    }
+  },
   "prettier": {
     "semi": false,
     "singleQuote": true

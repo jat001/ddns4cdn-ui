@@ -1,12 +1,5 @@
 {
-  "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit"
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "files.eol": "\n",
-  "files.insertFinalNewline": true,
-  "files.trimTrailingWhitespace": true,
-  "stylelint.snippet": ["css", "postcss", "scss"],
-  "stylelint.validate": ["css", "html", "postcss", "scss", "vue"]
+  "CSSNavigation.alwaysIncludeGlobPatterns": [
+    "**/node_modules/vuetify/dist/vuetify.css"
+  ]
 }

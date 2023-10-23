@@ -1,29 +1,27 @@
 <template>
-  <v-app id="inspire">
-    <v-navigation-drawer v-model="drawer">
-      <!--  -->
+  <v-layout class="rounded rounded-md">
+    <v-app-bar title="Application bar" />
+
+    <v-navigation-drawer>
+      <v-list
+        density="compact"
+        nav
+      >
+        <v-list-item
+          prepend-icon="mdi-folder"
+          title="Home"
+          to="/"
+        />
+        <v-list-item
+          prepend-icon="mdi-star"
+          title="History"
+          to="/history"
+        />
+      </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar>
-      <v-app-bar-nav-icon @click="drawer = !drawer" />
-
-      <v-app-bar-title>Application</v-app-bar-title>
-    </v-app-bar>
-
-    <v-main>
-      <NuxtPage />
+    <v-main class="d-flex align-center justify-center">
+      <nuxt-page />
     </v-main>
-  </v-app>
+  </v-layout>
 </template>
-
-<script setup>
-import { ref } from 'vue'
-
-const drawer = ref(null)
-</script>
-
-<script>
-export default {
-  data: () => ({ drawer: null }),
-}
-</script>

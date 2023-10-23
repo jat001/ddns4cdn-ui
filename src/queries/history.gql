@@ -1,0 +1,10 @@
+query GetHistory {
+  history {
+    id
+    type
+    history {
+      success
+      end_time
+    }
+  }
+}
