@@ -3,6 +3,7 @@
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
     "graphql.vscode-graphql",
+    "graphql.vscode-graphql-syntax",
     "nuxtr.nuxtr-vscode",
     "pucelle.vscode-css-navigation",
     "rohit-gohri.format-code-action",
