@@ -9,7 +9,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@mdi/font": "7.3.67",
+    "@mdi/font": "7.4.47",
     "@nuxt/devtools": "^1.0.6",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/stylelint-module": "^5.1.0",
