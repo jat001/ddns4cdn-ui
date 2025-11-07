@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@mdi/font": "7.3.67",
-    "@nuxt/devtools": "^1.0.6",
+    "@nuxt/devtools": "^3.1.0",
     "@nuxtjs/eslint-module": "^4.1.0",
     "@nuxtjs/stylelint-module": "^5.1.0",
     "@pinia/nuxt": "^0.5.1",
